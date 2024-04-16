@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth  " >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" /> 
+
+    
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="css/style.css" />
+   <script>
+   // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
+    if (
+      localStorage.getItem('color-theme') === 'dark' ||
+      (!('color-theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+  <script src="js/script.js" defer></script>
+  <title>Djennad portfolio</title>
+</head>
+
+<body class="dark:bg-darkBlue dark:text-white font-opensans ">
+   <header class="container mx-auto mt-10 px-6 text-center h-60 md:h-20 ">
+      <!--- logo -->
+      <div class=" h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10 ">
+        <h1 class="text-4xl capitalize  bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent font-bold  "> portfolio</h1>
+      </div>
+      <!--- menue -->
+      <div class=" flex items-center justify-center space-x-6 md:space-x-10 md:absolute top-12 right-20">
+        <a href="#features" class="hover:text-blue-600 ">Home</a>
+        <a href="#About" class="hover:text-blue-600">About</a>
+        <a href="#Skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <!-- Dark/Light Mode Button -->
+        <button id="theme-toggle"
+          class="text-gray-500  dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 5">
+
+      <!-- Dark SVG Icon -->
+      <svg id="theme-toggle-dark-icon" class="w-5 h-5  hidden" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+      </svg>
+      <!-- Light SVG Icon -->
+      <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd" clip-rule="evenodd"></path>
+      </svg>
+      </button>
+        </div>
+    </header>
+<!-- Hero Section -->
+
+   <!-- Hero Section -->
+   <section id="Hero" class="md:bg-curvy-light-mode md:dark:bg-curvy-dark-mode bg-no-repeat sm:bg-cover  xl:bg-contain  md:bg-cover">
+     <!-- Hero Container -->
+     <div class="container mx-auto px-6 text-center sm:pt-10 md:pt-50 xl:pt-50">
+       <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-6xl ">Hi i am Hossam.</h1>
+       <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg xl:text-xl "><span id="element"
+         class=" text-4xl bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent font-bold capitalize"></span></p>
+       <button
+               class="p-3 text-white rounded-full w-52 xl:w-60 bg-cyan-400 transition ease-in-out delay-300 hover:bg-gradient-to-r from-cyan-400 to-blue-600 text-lg mp-9  ">
+         <a href="#About">Get Started</a>
+       </button>
+     </div>
+
+
+     <section id="About" class="pt-12 bg-gray-50 dark:bg-darkBlue1    2xl:mt-36">
+       <!-- Productive Container -->
+       <div class="container flex flex-col items-center mx-auto px-6 2xl:mt-10    md:flex-row md:space-x-16">
+         <!-- Image -->
+         <div class="md:w-1/2" data-aos="fade-in">
+           <img src="images/Coding-bro.svg" alt="" class="mb-10" />
+         </div>
+         <!-- Content -->
+         <div class="flex flex-col items-start md:w-1/2" data-aos="fade-in" >
+           <div class="flex flex-col space-y-5">
+             <h4 class="max-w-md text-xl font-bold md:text-4xl">
+               Stay productive, wherever you are
+             </h4>
+             <p class="text-md md:text-lg">
+               Hello, I'm Hossam, originally from Algeria. I hold a Master's degree in Chemistry, but my passion for technology led me
+               to pursue further studies in Software Engineering at Duisburg-Essen University in Germany. Currently, I am actively
+               seeking a student job opportunity to enhance my skills and contribute to the field. My transition from chemistry to
+               software engineering reflects my dedication to continuous learning and professional development.
+             </p>
+
+             <p class="text-md md:text-lg ">
+
+             </p>
+           </div>
+
+           <!-- Link -->
+           <div class="block mt-4">
+             <a href="#" class="border-b border-accentCyan text-accentCyan capitalize">
+               cv download
+               <img src="images/icon-arrow.svg" alt="" class="inline pb-2" />
+             </a>
+           </div>
+         </div>
+       </div>
+     </section>
+   </section>
+<!-- Features Section -->
+
+<section id="Skills" class="py-10 relative bg-gray-50 dark:bg-darkBlue1 dark:text-white sm:py-16 2xl:p-24  ">
+  
+
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 text-center mb-40 "data-aos="zoom-in-up" data-aos-duration="2000" >
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-2xl text-darkBlue2 sm:text-4xl sm:leading-tight dark:bg-gradient-to-r from-cyan-400 to-blue-600 dark:bg-clip-text dark:text-transparent font-bold">My Skills
+      </h2>
+    </div>
+
+    <div class=" grid items-center max-w-4xl grid-cols-2 gap-4 mx-auto mt-12 md:mt-20 md:grid-cols-4  ">
+
+      
+      <div
+        class="  bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="  object-contain w-full h-12 mx-auto "
+          src="./images/skills/file_type_html_icon_130541.png" alt="">
+      </div>
+      
+      <div class="  bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="  object-contain w-full h-16 mx-auto"
+          src="./images/skills/file_type_css_icon_130661.png" alt="">
+      </div>
+
+      <div
+        class="bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="object-contain w-full h-16 mx-auto"
+          src="./images/skills/java_original_wordmark_logo_icon_146459.png" alt="">
+      </div>
+
+      <div
+        class="bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="object-contain w-full h-16 mx-auto"
+          src="./images/skills/javascript_plain_logo_icon_146454.png" alt="">
+      </div>
+
+      <div
+        class="bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="object-contain w-full h-16 mx-auto"
+          src="./images/skills/mysql_original_wordmark_logo_icon_146417.png" alt="">
+      </div>
+
+       <div class="bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="object-contain w-full h-16 mx-auto"
+          src="./images/skills/php_icon_130857.png" alt="">
+      </div>
+
+       <div class="bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="object-contain w-full h-16 mx-auto"
+          src="./images/skills/laravel-logo.png" alt="">
+      </div>
+
+       <div class="bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="object-contain w-full h-16 mx-auto"
+          src="./images/skills/logo-vue.png" alt="">
+          
+      </div>
+         <div class="bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+         <img class="object-contain w-full h-16 mx-auto" src="./images/skills/Tailwind CSS.png" alt="">
+      </div>
+      
+       <div class="bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-100 hover:bg-darkBlue dark:bg-darkBlue3 dark:hover:bg-white">
+        <img class="object-contain w-full h-16 mx-auto"
+          src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="">
+      </div>
+      
+
+       <div class= " div1 bg-white h-20 flex shadow-lg items-center justify-cente  transition ease-in-out delay-300 hover:bg dark:bg-darkBlue3 dark:hover:bg-white hover:scale-110 ">
+        <img class="wordp object-contain w-full h-10 mx-auto hidden " src="https://s.w.org/style/images/about/WordPress-logotype-wmark.png"
+          alt="">
+          <img class=" rest object-contain w-full h-6 mx-auto  hidden" src="./images/rest-api-icon.png"
+            alt="">
+            <img class=" typesc object-contain w-full h-6 mx-auto  hidden" src="./images/typescript_original_logo_icon_146317.png" alt="">
+        <p class="object-contain w-full mx-auto h-7 capitalize  bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent font-bold img1"> and still learning ... </p> 
+          
+      </div>
+
+      
+
+      
+    </div>
+
+    
+
+   
+  </div>
+</section>
+
+<!-- Productive Section -->
+
+
+<!-- Testimonials Section -->
+<section id="projects" class="bg-gray-50 dark:bg-darkBlue z-0">
+  <!-- Testimonials Container -->
+  <div class="container mx-auto px-6 pt-12 pb-80 md:pb-44">
+    <div class="max-w-2xl mx-auto text-center mb-10">
+      <h2
+        class="text-2xl text-darkBlue2 sm:text-4xl sm:leading-tight dark:bg-gradient-to-r from-cyan-400 to-blue-600 dark:bg-clip-text dark:text-transparent font-bold capitalize">
+        my projects
+      </h2>
+    </div>
+    <!-- Boxes Container -->
+    <div class="relative flex flex-col w-full space-y-9 md:flex-row md:space-y-0 md:space-x-10 xl:flex-row xl:space-y-9 xl:space-x-12 " data-aos="fade-up">
+      
+      
+      
+
+      <!-- Box 1 -->
+      
+      <div class="flex flex-col p-10 space-y-9 rounded-lg bg-gray-100   dark:bg-darkBlue3 md:w-1/3 dark:hover:bg-white md:mt-10 transition ease-in delay-200 dark:hover:text-darkBlue  md:space-y-3 md:space-x-4 border-8 hover:text-white hover:bg-darkBlue">
+        <p class="text-sm leading-5   md:text-lg capitalize text-center rounded-sm  font-bold"  > 
+          book review website with laravel
+        </p>
+        <img src="" alt="" class="w-50 h-50 items-center   rounded-xl opacity-75" />
+        <!-- Customer Info -->
+        <div class="flex space-x-10 justify-center">
+          <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" class="w-10 h-10 rounded-full" />
+          <div >
+            <h5 class="text-sm font-semibold capitalize">github repository</h5>
+          <a href="https://github.com/hossampy/book-review-app.git"  target="_blank">  <p class="text-xs font-extralight">Click Here</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div
+        class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3 dark:hover:bg-white  transition ease-in-out delay-100 dark:hover:text-darkBlue  md:space-y-3 md:space-x-4  ">
+        <p class="text-sm leading-5 md:text-lg capitalize text-center rounded-sm  font-bold">
+        ecommerce website template with laravel
+        </p>
+        <img src="" alt=""
+          class="w-50 h-50 mt-20  mx-24 rounded-xl opacity-75" />
+        
+        <div class="flex space-x-10 justify-center">
+          <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" class="w-10 h-10 rounded-full" />
+          <div>
+            <h5 class="text-sm font-semibold capitalize">github repository</h5>
+            <a href="https://github.com/hossampy/ecommerce-laravel.git"  target="_blank">
+              <p class="text-xs font-extralight">Click Here</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div
+        class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3 dark:hover:bg-white  transition ease-in-out delay-100 dark:hover:text-darkBlue md:space-y-3 md:space-x-4">
+        <p class="text-sm leading-5 md:text-lg capitalize text-center rounded-sm  font-bold">
+          Weather App Using Vue.js
+        </p>
+        <img src="" alt="" class="w-50 h-50 mx-24 rounded-xl opacity-75" />
+      
+        <div class="flex space-x-10 justify-center">
+          <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" class="w-10 h-10 rounded-full" />
+          <div>
+            <h5 class="text-sm font-semibold capitalize">github repository</h5>
+            <a href="https://github.com/hossampy/weather-app-vue.git"  target="_blank" >
+              <p class="text-xs font-extralight">Click Here</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    <div class="relative flex flex-col w-full space-y-9 md:flex-row md:space-y-9 md:space-x-12  ">
+    
+      <!-- Quotes    Image -->
+    
+    
+      <!-- Box 1 -->
+      <div
+        class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3 md:mt-10 dark:hover:bg-white  transition ease-in-out delay-100 dark:hover:text-darkBlue md:space-y-3 md:space-x-4  ">
+        <p class="text-sm leading-5 md:text-lg capitalize text-center rounded-sm  font-bold">
+          simple memory game vanilla javascript
+        </p>
+        <img src="" alt="" class="w-50 h-50 mx-24 rounded-xl opacity-75" />
+        
+        <div class="flex space-x-10 justify-center">
+          <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" class="w-10 h-10 rounded-full" />
+          <div>
+            <h5 class="text-sm font-semibold capitalize">github repository</h5>
+            <a href="https://github.com/hossampy/memory-game.git" target="_blank">
+              <p class="text-xs font-extralight">Click Here</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Box 2 -->
+      <div
+        class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3 dark:hover:bg-white  transition ease-in-out delay-100 dark:hover:text-darkBlue md:space-y-3 md:space-x-4 opacity-50 hover:cursor-not-allowed">
+        <p class="text-sm leading-5 md:text-lg capitalize text-center rounded-sm  font-bold">
+          Upcoming projects .... 😁
+        </p>
+        <img src="" alt=""
+          class="w-50 h-50 mx-24 rounded-xl opacity-75" />
+        
+        <div class="flex space-x-10 justify-center">
+          <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" class="w-10 h-10 rounded-full" />
+          <div>
+            <h5 class="text-sm font-semibold capitalize">github repository</h5>
+            <a href="">
+              <p class="text-xs font-extralight">Click Here</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Box 3 -->
+      <div
+        class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3 dark:hover:bg-white  transition ease-in-out delay-100 dark:hover:text-darkBlue md:space-y-3 md:space-x-4 opacity-50 hover:cursor-not-allowed">
+        <p class="text-sm leading-5 md:text-lg capitalize text-center rounded-sm  font-bold">
+          Upcoming projects .... 😁
+        </p>
+        <img src="" alt=""
+          class="w-50 h-50 mx-24 rounded-xl opacity-75 xl:my-20 xl:mx-10" />
+     
+        <div class="flex space-x-10 justify-center">
+          <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="" class="w-10 h-10 rounded-full" />
+          <div>
+            <h5 class="text-sm font-semibold capitalize">github repository</h5>
+            <a href="">
+              <p class="text-xs font-extralight">Click Here</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    
+    
+    </div>
+  </div>
+</section>
+
+<!-- Early Access Section -->
+
+
+<!-- Footer -->
+<footer class="bg-footer-light-mode bg-no-repeat bg-bottom bg-cover  dark:bg-footer-dark-mode" data-aos="fade-in" data-aos-duration="1000"
+      >
+
+  <div class="container mx-auto px-6 text-center md:pt-56 md:w-full pb-20 xl:pb-20 z-50 ">
+    <!-- Flex Container For All Items -->
+    <div class="flex flex-col justify-between space-y-24 md:flex-row md:space-y-10 ">
+      <!-- Email & Phone -->
+      <div class="mt-10 space-y-8 ">
+        <div class="flex items-center space-x-3 md:-mt-10 font-bold">
+          <div class="w-6">
+            <img src="images/icon-phone.svg" alt="" class="scale-10" />
+          </div>
+          <div>+49 176 40376815</div>
+        </div>
+        <div class="flex items-center space-x-3 font-bold">
+          <div class="w-6 text-darkBlue2">
+            <img src="images/icon-email.svg" alt="" class="scale-10" />
+          </div>
+          <div>hossameddine.djennad@gmail.com</div>
+        </div>
+        
+      </div>
+
+      <!-- Menus -->
+      
+
+      <!-- Social -->
+    
+    </div>
+    <div class=" ">
+    <p
+      class="capitalize mx-auto text-center    bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent font-bold dark:hover:text-white duration-300 ">
+      made with <span class="text-red-600">❤</span> in Dortmund</p>
+
+    </div>
+  </div>
+</footer>
+
+
+</body>
+<script>
+ 
+    
+  AOS.init({duration:1200});
+</script>
+
+<script src="script.js"></script>
+<script>
+  
+   var typed;
+    function startTyped() {
+      typed = new Typed('#element', {
+        strings: [' student software engineer ', 'Chemist ', 'web devloper... ', 'and more ...'],
+        typeSpeed: 120,
+        onComplete: function () {
+          // Restart the Typed animation with a new set of strings
+          restartTyped();
+        }
+      })
+    }
+    function restartTyped() {
+      // Destroy the existing Typed instance
+      typed.destroy();
+
+      // Call startTyped again with new set of strings
+      startTyped();
+    }
+    startTyped();
+</script>
+
+
+</html>
