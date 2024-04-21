@@ -760,17 +760,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
-.border-8 {
-  border-width: 8px;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
 
-.border-accentCyan {
+.border-blue-800 {
   --tw-border-opacity: 1;
-  border-color: hsl(176 68% 64% / var(--tw-border-opacity));
+  border-color: rgb(30 64 175 / var(--tw-border-opacity));
 }
 
 .bg-cyan-400 {
@@ -956,9 +952,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-accentCyan {
+.text-blue-600 {
   --tw-text-opacity: 1;
-  color: hsl(176 68% 64% / var(--tw-text-opacity));
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-darkBlue2 {
@@ -1135,6 +1131,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .sm\:bg-cover {
     background-size: cover;
   }
@@ -1287,9 +1287,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .dark .md\:dark\:bg-curvy-dark-mode {
