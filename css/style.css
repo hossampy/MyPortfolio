@@ -870,6 +870,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Open Sans, sans-serif;
 }
 
+.font-Fasthand {
+  font-family: Fasthand;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1294,6 +1298,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:no-underline {
