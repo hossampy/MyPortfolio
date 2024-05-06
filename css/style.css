@@ -748,10 +748,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-sm {
   border-radius: 0.125rem;
 }
@@ -947,11 +943,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 .text-darkBlue2 {
   --tw-text-opacity: 1;
   color: hsl(216 53% 9% / var(--tw-text-opacity));
@@ -1135,10 +1126,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 2.5rem;
   }
 
-  .sm\:bg-none {
-    background-image: none;
-  }
-
   .sm\:bg-cover {
     background-size: cover;
   }
@@ -1269,10 +1256,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-image: url('../images/bg-curvy-light-mode.svg');
   }
 
-  .md\:bg-gradient-to-r {
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  }
-
   .md\:bg-cover {
     background-size: cover;
   }
@@ -1295,19 +1278,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:no-underline {
-    -webkit-text-decoration-line: none;
-            text-decoration-line: none;
   }
 
   .dark .md\:dark\:bg-curvy-dark-mode {
@@ -1368,11 +1341,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
 
