@@ -11,6 +11,9 @@ module.exports = {
         accentCyan: 'hsl(176, 68%, 64%)',
         accentBlue: 'hsl(198, 60%, 50%)',
         lightRed: 'hsl(0, 100%, 63%)',
+        'custom-blue': '#6b6bff', // Adjust this to match the exact shade of blue/purple
+        'custom-purple': '#8c52ff', // Adjust this to match the exact shade of purple
+        'custom-pink': '#ff52a1',
       },
       fontFamily: {
         sans: ['Raleway', 'sans-serif'],
